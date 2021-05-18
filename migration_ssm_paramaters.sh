@@ -5,14 +5,6 @@ set -o pipefail
 # 現在の値を取得してplanを表示、確認をはさんで移行処理をします
 # SecureStringのみ対応
 #
-# ex). アカウントAの/example/fooの値をアカウントBの/example/barに移行する
-#
-#   sh migration_ssm_paramaters.sh \
-#      --from_profile account_A \
-#      --to_profile   account_B \
-#      --from_key     /example/foo \
-#      --to_key       /example/bar
-#
 
 function usage() {
   cat <<EOT
