@@ -2,7 +2,12 @@
 SSMパラメータストアの値を移行するスクリプト
 実行計画と承認ステップのあと処理する
 
-ex). アカウントAの/example/fooの値をアカウントBの/example/barに移行する
+## Required
+* awscli
+* jq
+
+## Example
+* アカウントAの/example/fooの値をアカウントBの/example/barに移行する
 
 ```bash
 sh migration_ssm_paramaters.sh \
