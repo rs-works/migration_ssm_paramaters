@@ -96,7 +96,7 @@ read -p "ok? (y/N): " yn; case "$yn" in [yY]*) ;; *) echo "abort"; exit 1 ;; esa
 # SSMパラメータを更新
 aws --profile ${to_profile} ssm put-parameter \
     --name ${to_key} \
-    --value ${from_value} \
+    --value "${from_value}" \
     --type "SecureString" \
     --overwrite
 
